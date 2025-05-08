@@ -1,5 +1,5 @@
 from django.views.generic import FormView
-from django.urls import  reverse_lazy
+from django.urls import reverse_lazy
 from django.contrib import messages
 
 from .models import Servico, Funcionario, Recurso
@@ -19,7 +19,7 @@ class IndexView(FormView):
         return context
 
     def form_valid(self, form, *args, **kwargs):
-        form.send_mail()
+        form.send_email()
         messages.success(self.request, 'E-mail enviado com sucesso')
         return super(IndexView, self).form_valid(form, *args, **kwargs)
 

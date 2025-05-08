@@ -141,5 +141,5 @@ EMAIL_HOST_USER = 'no-reply@fusion.com.br'
 EMAIL_PORT = 587
 EMAIL_USE_TSL = True
 EMAIL_HOST_PASSWORD = 'fusion'
-DEFAUKT_FROM_EMAIL = 'contato@fusion.com.br'
+DEFAULT_FROM_EMAIL = 'contato@fusion.com.br'
 """
